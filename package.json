@@ -1,0 +1,17 @@
+{
+  "name": "prettier-watching-for-changes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier **/*.scss --write {{changed}}",
+    "prettier-watch": "onchange '**/*.scss' -- prettier --write {{changed}}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "onchange": "^3.3.0",
+    "prettier": "^1.11.1"
+  }
+}
